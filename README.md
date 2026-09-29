@@ -86,8 +86,8 @@ Personalized playlists
 Online deployment
 👩‍💻 Author
 
-## Kavipriya SP
-Artificial Intelligence and Data Science
+**Kavipriya SP
+Artificial Intelligence and Data Science**
 
 GitHub
 
