@@ -1,0 +1,8 @@
+streamlit
+streamlit-webrtc
+tensorflow==2.19.0
+mediapipe==0.10.21
+numpy<2.2
+opencv-python
+h5py
+av
