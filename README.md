@@ -1,39 +1,102 @@
-# EmotionTunes
+# 🎵 EmotionTunes
 
-Facial-expression based music recommendation system.
+### Facial Emotion-Based Music Recommendation System
 
-## Run on Windows
+EmotionTunes is an AI-powered music recommendation system that detects a user's facial emotion in real time and recommends music based on their mood, preferred language, and singer.
 
-Use **Python 3.11**.
+## ✨ Features
 
-```bat
-cd C:\Users\admin\Downloads\emotionmusic-ready
+- 🎥 Real-time webcam emotion detection
+- 🧠 AI-based emotion classification
+- 📍 MediaPipe facial & hand landmark detection
+- 🎭 Final emotion detection from multiple predictions
+- 🌐 Language preference
+- 🎤 Singer preference
+- 🎵 Mood-based YouTube music search
+- 💻 Streamlit web interface
+
+## 🏗️ How It Works
+
+```text
+Webcam
+   ↓
+MediaPipe Holistic
+   ↓
+Facial & Hand Landmarks
+   ↓
+1020 Feature Vector
+   ↓
+Keras Emotion Model
+   ↓
+Final Emotion
+   ↓
+Language + Singer
+   ↓
+YouTube Music Search
+🛠️ Tech Stack
+Python
+TensorFlow / Keras
+MediaPipe
+OpenCV
+Streamlit
+Streamlit-WebRTC
+NumPy
+📂 Project Structure
+EmotionTunes/
+├── music.py
+├── model.keras
+├── model.h5
+├── labels.npy
+├── requirements.txt
+├── run.bat
+├── README.md
+└── .gitignore
+🚀 Run Locally
+1. Clone
+git clone https://github.com/kavipriyasp07/EmotionTunes.git
+cd EmotionTunes
+2. Create environment
 python -m venv .venv
 .venv\Scripts\activate
-python -m pip install --upgrade pip
+3. Install dependencies
 pip install -r requirements.txt
+4. Run
 streamlit run music.py
-```
 
-## How it works
+Open the Streamlit URL shown in the terminal.
 
-1. Enter Language and Singer.
-2. Click START on the webcam.
-3. Keep your face visible for 5–10 seconds.
-4. The model collects confident emotion predictions.
-5. Click STOP.
-6. The session's most frequent emotion becomes the final emotion.
-7. The system maps that emotion to a music category and opens a YouTube search.
+🎯 Emotion Pipeline
 
-## Model loading fix
+The system processes:
 
-The supplied model was saved with Keras 3.9.2. This project does **not** call `load_model()` on the supplied `.keras`/`.h5` model. Instead, it rebuilds the exact Dense network used by the original training script and loads the numeric weights from `model.h5` with `h5py`. This avoids the Keras name-scope `pop` loading error.
+Face + Hand Landmarks → 1020 Features → Emotion Model → Final Emotion → Music Search
 
-Keep these files in the same directory as `music.py`:
+The current model contains seven output labels:
 
-- `model.h5`
-- `model.keras` (kept as the original model artifact; not required by the runtime loader)
-- `labels.npy`
-- `music.py`
+disgust, happy, mad, netural, rock, sad, surprise
 
-`model.h5` is used by the runtime loader.
+Note: netural is the existing label stored in the trained model.
+
+🔮 Future Improvements
+Improve emotion recognition accuracy
+Better happy/sad/neutral classification
+Verified mood-based song database
+Spotify / YouTube Music integration
+Personalized playlists
+Online deployment
+👩‍💻 Author
+
+## Kavipriya SP
+Artificial Intelligence and Data Science
+
+GitHub
+
+⭐ EmotionTunes — Detect the emotion. Discover the music.
+
+
+Then save `README.md` and run:
+
+```powershell
+git add README.md
+git commit -m "Update professional README"
+git push
