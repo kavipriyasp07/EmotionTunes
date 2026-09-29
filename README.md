@@ -15,10 +15,11 @@ EmotionTunes is an AI-powered music recommendation system that detects a user's 
 - 🎵 Mood-based YouTube music search
 - 💻 Streamlit web interface
 ## Output
-<img width="1906" height="1016" alt="image" src="https://github.com/user-attachments/assets/931b65bc-5b5d-4d5d-ba20-e0412a084edc" />
-<img width="859" height="874" alt="image" src="https://github.com/user-attachments/assets/f44c5a50-de35-49c2-8f69-dbd7dc4b0a9f" />
+
 <img width="1913" height="1004" alt="image" src="https://github.com/user-attachments/assets/69fbf6a8-5816-4172-b5e5-4b23a3712806" />
-<img width="886" height="661" alt="image" src="https://github.com/user-attachments/assets/2027e8c2-ea64-4aa3-8bc4-1b8ca2df3168" />
+<img width="859" height="874" alt="image" src="https://github.com/user-attachments/assets/f44c5a50-de35-49c2-8f69-dbd7dc4b0a9f" />
+
+<img width="1906" height="1016" alt="image" src="https://github.com/user-attachments/assets/931b65bc-5b5d-4d5d-ba20-e0412a084edc" />
 
 
 ## 🏗️ How It Works
